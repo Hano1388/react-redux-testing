@@ -8,7 +8,8 @@ describe('<App />', () => {
   beforeEach(() => {
     wrapper = shallow(<App />);
   })
-  it('shows text React Redux Testing Starter', () => {
-    expect(wrapper.find('div').text()).toContain('React Redux Testing Starter');
+  it('shows comment box', () => {
+    expect(wrapper.render().hasClass('comment-box')).toEqual(true);
   });
+
 });
