@@ -1,8 +1,13 @@
 import React from 'react';
 
+import CommentBox from 'components/CommentBox';
+
 const App = () => {
   return (
-    <div>React Redux Testing Starter</div>
+    <React.Fragment>
+      <div>React Redux Testing Starter</div>
+      <CommentBox />
+    </React.Fragment>
   );
 };
 
