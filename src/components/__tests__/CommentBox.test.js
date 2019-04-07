@@ -36,9 +36,9 @@ describe('<CommentBox />', () => {
     it('shows text that is entered', () => {
       expect(wrapper.find('textarea').prop('value')).toEqual('New Comment');
     });
-
     it('when submitted, clears the textarea', () => {
-
+      wrapper.find('form').simulate('submit');
+      expect(wrapper.find('textarea').prop('value')).toContain('');
     });
   });
 
