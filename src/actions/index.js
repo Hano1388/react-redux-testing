@@ -1,10 +1,8 @@
-const INITIAL_STATE = {
-  comments: ['First Comment', 'Second Comment']
-};
+import { SAVE_COMMENT } from 'actions/types';
 
-export fetchComments = () => {
+export const saveComment = (comment) => {
   return {
-    type: FETCH_COMMENTS,
-    payload: INITIAL_STATE.comments
+    type: SAVE_COMMENT,
+    payload: comment
   }
 }
