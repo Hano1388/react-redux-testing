@@ -14,11 +14,11 @@ describe('<App />', () => {
     );
   })
   it('shows comment box', () => {
-    expect(wrapper.render().hasClass('comment-box')).toEqual(true);
+    expect(wrapper.render().find('div').hasClass('comment-box')).toEqual(true);
   });
 
   it('shows comment list', () => {
-    expect(wrapper.render().hasClass('comment-list')).toEqual(true);
+    expect(wrapper.render().find('div').hasClass('comment-list')).toEqual(true);
   });
 
 });

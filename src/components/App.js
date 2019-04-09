@@ -5,10 +5,10 @@ import CommentList from 'components/CommentList';
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="ui container">
       <CommentBox />
       <CommentList />
-    </React.Fragment>
+    </div>
   );
 };
 
